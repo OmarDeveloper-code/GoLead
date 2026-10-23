@@ -1,11 +1,39 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+	<section class="hero" aria-labelledby="home-title">
+		<div class="hero-content">
+			<p class="eyebrow">Tecnología con intención · Colombia</p>
+			<h1 id="home-title">GoLead<span>Reboot</span></h1>
+			<p class="hero-copy">Liderar el reinicio. Creamos soluciones web y software funcionales, modernas y hechas para avanzar contigo.</p>
+			<div class="hero-actions">
+				<a class="button" href="/quienes-somos/">Conócenos <span aria-hidden="true">↗</span></a>
+				<a class="button button--outline" href="/contacto/">Hablemos</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="intro-band" aria-labelledby="intro-title">
+		<span class="intro-label" id="intro-title">Ideas que avanzan</span>
+		<p>Te acompañamos desde la idea hasta el lanzamiento, con integridad, eficiencia y una mirada puesta en la mejora continua.</p>
+	</section>
+
+	<nav class="pathways" aria-label="Conoce GoLeadReboot">
+		<div class="pathways-inner">
+			<a class="pathway" href="/quienes-somos/">
+				<small>01 / La empresa</small>
+				<strong>Quiénes somos <span aria-hidden="true">↗</span></strong>
+			</a>
+			<a class="pathway" href="/mision/">
+				<small>02 / Nuestro propósito</small>
+				<strong>Misión <span aria-hidden="true">↗</span></strong>
+			</a>
+			<a class="pathway" href="/vision/">
+				<small>03 / Hacia dónde vamos</small>
+				<strong>Visión <span aria-hidden="true">↗</span></strong>
+			</a>
+		</div>
+	</nav>
 </Layout>

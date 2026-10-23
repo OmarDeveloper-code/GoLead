@@ -1,0 +1,51 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const whatsappUrl = 'https://wa.me/573207224992?text=Hola%20GoLeadReboot%2C%20quiero%20conocer%20m%C3%A1s.';
+const gmailUrl = 'https://mail.google.com/mail/?view=cm&fs=1&to=goleadreboot%40gmail.com&su=Contacto%20GoLeadReboot';
+---
+
+<Layout
+	title="Contacto | GoLeadReboot"
+	description="Contacta a GoLeadReboot por WhatsApp o correo electrónico."
+>
+	<section class="page-hero" aria-labelledby="page-title">
+		<div class="page-hero-inner">
+			<div>
+				<p class="eyebrow">Hagamos que avance</p>
+				<h1 class="page-heading" id="page-title">Contacto</h1>
+			</div>
+			<p class="page-hero-note">Cuéntanos tu idea. Estamos listos para conversar.</p>
+		</div>
+	</section>
+	<section class="content-section">
+		<div class="contact-grid">
+			<div class="contact-group">
+				<h2>Escríbenos</h2>
+				<div class="contact-row">
+					<span>Correo</span>
+					<strong class="contact-email"><a href="mailto:goleadreboot@gmail.com">goleadreboot@gmail.com</a></strong>
+				</div>
+				<div class="contact-row">
+					<span>Teléfono</span>
+					<strong><a href="tel:+573207224992">+57 320 722 4992</a></strong>
+				</div>
+				<div class="contact-actions">
+					<a class="button" href={whatsappUrl} target="_blank" rel="noopener noreferrer">Escribir por WhatsApp <span aria-hidden="true">↗</span></a>
+					<a class="button button--outline" href={gmailUrl} target="_blank" rel="noopener noreferrer">Abrir Gmail <span aria-hidden="true">↗</span></a>
+				</div>
+			</div>
+			<div class="contact-group">
+				<h2>Fechas clave</h2>
+				<div class="contact-row">
+					<span>Fecha de planeación</span>
+					<strong>3/10/2026</strong>
+				</div>
+				<div class="contact-row">
+					<span>Inicio de operaciones</span>
+					<strong>12/10/2026</strong>
+				</div>
+			</div>
+		</div>
+	</section>
+</Layout>
